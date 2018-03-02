@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Jobs</title>
+</head>
+<body>
+    <h1>Portal de trabajos en salud</h1>
+
+    <p>Últimos cargos requeridos</p>
+
+    {% for cargos in descripcion_list %}
+        <ul>
+            <li>
+                {{ cargos.cargo }} | {{ cargos.ciudad }}
+                <!--<a href="#"></a>-->
+                <button>Ver</button>
+            </li>
+        </ul>
+    {% endfor %}
+</body>
+</html>
