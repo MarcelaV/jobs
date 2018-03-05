@@ -44,6 +44,15 @@ EDUCACION = (
     (INDIFERENTE, 'Indiferente')
 )
 
+ACTIVA = 'ACTIVA'
+INACTIVA = 'INACTIVA'
+
+ESTADO_PUBLICACION = {
+    (ACTIVA, 'Activa'),
+    (INACTIVA, 'Inactiva')
+}
+
+
 class Empresa(models.Model):
     nombre = models.CharField(max_length=50)
     anos_experiencia = models.IntegerField()
@@ -52,6 +61,7 @@ class Empresa(models.Model):
         return self.nombre
 
 class DescripcionCargo(models.Model):
+    owner = models.ForeignKey(Empresa)
     cargo = models.CharField(max_length=30)
     descripcion_cargo = models.TextField()
     ciudad = models.CharField(max_length=30)
@@ -59,7 +69,7 @@ class DescripcionCargo(models.Model):
     sueldo = models.IntegerField()
     tipo_jornada = models.CharField(max_length=20, choices=JORNADAS)
     tipo_contrato = models.CharField(max_length=20, choices=CONTRATO)
-
+    estado_publicacion = models.CharField(max_length=10, choices=ESTADO_PUBLICACION, default=ACTIVA)
     def __unicode__(self):
         return self.cargo
 

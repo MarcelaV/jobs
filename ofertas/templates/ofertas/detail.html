@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+    {% block title %}{{ ofertas_detail.cargo }}{% endblock %}
+
+{% block section%}
+
+    <h1>{{ ofertas_detail.cargo }}</h1>
+    <h2>{{ ofertas_detail.owner }}</h2>
+    <hr>
+    <h3>Descripción del cargo: {{ ofertas_detail.descripcion_cargo }}</h3>
+    <h3>Ubicación: {{ ofertas_detail.ciudad }}</h3>
+    <h3>Fecha: {{ ofertas_detail.fecha_contratacion }}</h3>
+    <h3>Renta: {{ ofertas_detail.sueldo }}</h3>
+    <h3>Jornada: {{ ofertas_detail.tipo_jornada }}</h3>
+    <h3>Contratación: {{ ofertas_detail.tipo_contrato }}</h3>
+
+{% endblock %}
+

@@ -1,22 +1,21 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Jobs</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block section %}
     <h1>Portal de trabajos en salud</h1>
+    <h4>Últimos cargos requeridos</h4>
 
-    <p>Últimos cargos requeridos</p>
-
-    {% for cargos in descripcion_list %}
-        <ul>
-            <li>
-                {{ cargos.cargo }} | {{ cargos.ciudad }}
-                <!--<a href="#"></a>-->
-                <button>Ver</button>
-            </li>
-        </ul>
-    {% endfor %}
-</body>
-</html>
+    {% if descripcion_list > 0 %}
+        {% for cargo in descripcion_list %}
+            <ul>
+                <li>
+                    {{ cargo.cargo }} | {{ cargo.ciudad }}
+                    <a href="{% url 'ofertas_detail' cargo.pk %}">
+                        <button>Ver</button>
+                    </a>
+                </li>
+            </ul>
+        {% endfor %}
+    {% else %}
+        No hay ofertas laborales
+    {% endif %}
+{% endblock %}
