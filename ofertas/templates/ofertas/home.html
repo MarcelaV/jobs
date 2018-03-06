@@ -5,16 +5,7 @@
     <h4>Últimos cargos requeridos</h4>
 
     {% if descripcion_list > 0 %}
-        {% for cargo in descripcion_list %}
-            <ul>
-                <li>
-                    {{ cargo.cargo }} | {{ cargo.ciudad }}
-                    <a href="{% url 'ofertas_detail' cargo.pk %}">
-                        <button>Ver</button>
-                    </a>
-                </li>
-            </ul>
-        {% endfor %}
+        {% include 'ofertas/ofertas_loop.html' %}
     {% else %}
         No hay ofertas laborales
     {% endif %}

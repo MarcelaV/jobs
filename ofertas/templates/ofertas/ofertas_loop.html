@@ -1,0 +1,12 @@
+
+
+{% for cargo in descripcion_list %}
+            <ul>
+                <li>
+                    <strong>{{ cargo.cargo }}</strong> | {{ cargo.ciudad }} -- {{ cargo.owner }}
+                    <a href="{% url 'ofertas_detail' cargo.pk %}">
+                        <button>Ver</button>
+                    </a>
+                </li>
+            </ul>
+{% endfor %}

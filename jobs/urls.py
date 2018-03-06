@@ -16,22 +16,24 @@ Including another URLconf
 
 from django.conf.urls import url
 from django.contrib import admin
-
-import cv
 import ofertas
-import users
 from ofertas import views
+from ofertas.views import HomeView, DetailView, CreateView, ListView
 from users import views as users_views
+from users.views import LoginView, LogoutView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
     #OFERTAS URLS
-    url(r'^$', views.home, name='ofertas_home'),
-    url(r'^ofertas/(?P<pk>[0-9]+)$', ofertas.views.detail, name='ofertas_detail'),
+    url(r'^$', HomeView.as_view(), name='ofertas_home'),
+    url(r'^ofertas/$', ListView.as_view(), name='ofertas_list'),
+    url(r'^ofertas/(?P<pk>[0-9]+)$', DetailView.as_view(), name='ofertas_detail'),
+    url(r'^ofertas/nueva$', CreateView.as_view(), name='crear_oferta'),
+
 
     #USERS URLS
-    url(r'^login$', users_views.login, name='users_login'),
-    url(r'^logout$', users_views.logout, name='users_logout'),
+    url(r'^login$', LoginView.as_view(), name='users_login'),
+    url(r'^logout$', LogoutView.as_view(), name='users_logout'),
 
 ]

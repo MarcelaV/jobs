@@ -2,6 +2,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
+from django.db import IntegrityError
 
 # CLASE DESCRIPCIÓN
 COMPLETA = 'COMPLETA'
@@ -55,7 +56,7 @@ ESTADO_PUBLICACION = {
 
 class Empresa(models.Model):
     nombre = models.CharField(max_length=50)
-    anos_experiencia = models.IntegerField()
+    anos_experiencia = models.IntegerField(null=True, blank=True)
 
     def __unicode__(self):
         return self.nombre
@@ -70,6 +71,7 @@ class DescripcionCargo(models.Model):
     tipo_jornada = models.CharField(max_length=20, choices=JORNADAS)
     tipo_contrato = models.CharField(max_length=20, choices=CONTRATO)
     estado_publicacion = models.CharField(max_length=10, choices=ESTADO_PUBLICACION, default=ACTIVA)
+    #created_at = models.DateTimeField(auto_now_add=True)
     def __unicode__(self):
         return self.cargo
 
