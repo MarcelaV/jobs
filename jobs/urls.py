@@ -36,4 +36,7 @@ urlpatterns = [
     url(r'^login$', LoginView.as_view(), name='users_login'),
     url(r'^logout$', LogoutView.as_view(), name='users_logout'),
 
+    #REGISTRO URLS
+    #url(r'^logout$', LogoutView.as_view(), name='users_logout'),
+
 ]
