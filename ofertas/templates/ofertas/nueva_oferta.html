@@ -4,9 +4,11 @@
 
 {% block section %}
 
-    <h1>Crear nueva oferta</h1>
+    <h3>Crear nueva oferta</h3>
+<br>
     {% if success_message %} <span style="color:green">{{ success_message|safe }}</span> {% endif %}
 
+<div class="container">
     <form method="post" action="">
         {% csrf_token %}
         {{ form.as_p }}
@@ -14,6 +16,6 @@
             <button>Crear oferta</button>
         </div>
     </form>
-
+</div>
 
 {% endblock %}

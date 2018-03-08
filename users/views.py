@@ -1,12 +1,17 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+from django.db import models
 from django.shortcuts import render, redirect
 from django.contrib.auth import logout as django_logout, authenticate, login as django_login
 from django.views.generic import View
 from users.forms import LoginForm
 
+
 from django.contrib.auth.models import User
+from django.contrib.auth.forms import UserCreationForm
+from django.views.generic import CreateView
+from django.core.urlresolvers import reverse_lazy
 
 
 class LoginView(View):
@@ -50,4 +55,11 @@ class LogoutView(View):
         if request.user.is_authenticated():
             django_logout(request)
         return redirect('ofertas_home')
+
+
+class RegistroUsuario(CreateView):
+    model = User
+    template_name = 'users/registrar.html'
+    form_class = LoginForm
+    success_url = reverse_lazy('ofertas_home')
 

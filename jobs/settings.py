@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+from django.core.urlresolvers import reverse_lazy
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -41,6 +43,7 @@ INSTALLED_APPS = [
     'ofertas',
     'jobs',
     'users',
+    'django_tables2',
 ]
 
 MIDDLEWARE = [
@@ -66,6 +69,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.request',
             ],
         },
     },
@@ -124,4 +128,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 #LOGIN URL
-LOGIN_URL = '/login'
+#LOGIN_URL = '/login'
+
+LOGIN_REDIRECT_URL = reverse_lazy('ofertas_list')
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = 'correopruebasmvp@gmail.com'
+EMAIL_HOST_PASSWORD = 'admin12345'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

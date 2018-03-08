@@ -2,13 +2,15 @@
 from __future__ import unicode_literals
 
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponse, HttpResponseNotFound
+from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
 from django.views.generic import View
-from ofertas.forms import OfertaForm
+from ofertas.forms import OfertaForm, PostularForm
 from ofertas.models import Empresa, DescripcionCargo, ACTIVA
 from django.utils.decorators import method_decorator
+
+from ofertas.models import Postular
 
 
 class HomeView(View):
@@ -70,8 +72,20 @@ class ListView(View):
     def get(self, request):
         ofertas = DescripcionCargo.objects.all()
         context = {
-            'ofertas': ofertas
+            'ofertas': ofertas[:7]
         }
 
         return render(request, 'ofertas/ofertas_list.html', context)
+
+class Postulacion(ListView):
+    def get(self, request):
+        modelo = Postular.objects.all()
+        form = PostularForm
+        context = {
+            'modelo_postulacion': modelo,
+            'form': form
+        }
+
+
+        return render(request, 'ofertas/postulacion.html', context)
 
