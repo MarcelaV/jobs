@@ -1,11 +1,40 @@
 {% extends 'base.html' %}
 
+
+
+
+
+
 {% block section %}
-    <h1>Portal de trabajos en salud</h1>
+
+<h1 class="titulo-home">Portal de trabajos en salud</h1>
+<br>
+<br>
+
+<div class="container-fluid">
+<div class="main">
+    <div class="slides">
+        <a href="http://idnews.idaccion.com/7-claves-para-emular-el-exito-de-jack-ma-fundador-de-alibaba/" target="_blank"><img src="static/img/image1.jpg" alt=""></a>
+        <a href="https://cazatutrabajo.com/como-conseguir-trabajo-en-internet/" target="_blank"><img src="static/img/imagen2.jpeg" alt=""></a>
+        <a href="https://www.youtube.com/watch?v=MqO2aCjOuS4" target="_blank"><img src="static/img/image3.jpg" alt=""></a>
+    </div>
+</div>
+    </div>
+
+<br>
+
     <h4>Últimos cargos requeridos</h4>
 <br>
-    {% if descripcion_list > 0 %}
-        {% include 'ofertas/ofertas_loop.html' %}
+<div class="container">
+    <div class="row">
+        <div class="listita col-md-4">
+        {% if descripcion_list > 0 %}
+            {% include 'ofertas/ofertas_loop.html' %}
+        </div>
+    </div>
+</div>
+
+
     {% else %}
         No hay ofertas laborales
     {% endif %}

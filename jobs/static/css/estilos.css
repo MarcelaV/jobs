@@ -1,0 +1,90 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background:#f2f2f2;
+}
+
+.main {
+	width:100%;
+	margin:0px auto;
+}
+
+.slides {
+	width:100%;
+}
+
+.slides img {
+	width:100%;
+}
+
+.slidesjs-pagination {
+	background:#424242;
+	list-style:none;
+	overflow:hidden;
+}
+
+.slidesjs-pagination li {
+	float:left;
+}
+
+.slidesjs-pagination li a {
+	display:block;
+	padding:10px 20px;
+	color:#fff;
+	text-decoration:none;
+}
+
+.slidesjs-pagination li a:hover {
+	background:#000;
+}
+
+.slides .active {
+	background:#000;
+}
+
+.slidesjs-navigation{
+	background:#424242;
+	color:#fff;
+	text-decoration:none;
+	display:inline-block;
+	padding:13.5px 20px;
+	float:right;
+}
+
+body{
+    background-image: url("http://www.guia-empresas.net/fondos/grandes/GE-fondo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10em;
+	background-position: bottom;
+}
+
+.navbar-header{
+    background: #484953;
+    height: 3em;
+}
+
+.logo{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 6px;
+    left: 40px;
+}
+
+.texto-logo {
+    color: white;
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 10px;
+    font-family: "Lato",sans-serif,sans-serif;
+}
+
+.titulo-home{
+    font-family: 'Crete Round', serif;
+    font-size: 5em;
+    margin-left: 65px;
+}

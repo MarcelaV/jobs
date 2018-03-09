@@ -1,23 +1,25 @@
 {% extends 'base.html' %}
 
+
 {% block title %} Postular {% endblock %}
 
 {% block section %}
 
 
-<h1>Postulación</h1>
-    <div>
+<h1>Postulación a {{ descripcion_list.cargo }}</h1>
 
+    <div class="row">
+        <div class="col-md-6">
+            <div>
+                {{ form.as_p }}
+            </div>
+        </div>
 
-        {% for x in modelo_postulacion %}
-
-        <h1>{{ x.carrera }}</h1>
-        <p>{{ x.descripcion_breve }}</p>
-
-        {% endfor %}
-
-        {{ form }}
-
+        <div class="col-md-6">
+            <div>
+                {{ form.as_p }}
+            </div>
+        </div>
 
     </div>
 

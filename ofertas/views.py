@@ -83,7 +83,7 @@ class Postulacion(ListView):
         form = PostularForm
         context = {
             'modelo_postulacion': modelo,
-            'form': form
+            'form': form,
         }
 
 
