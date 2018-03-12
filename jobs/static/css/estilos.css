@@ -54,20 +54,21 @@ body {
 	float:right;
 }
 
-body{
+.body-img{
     background-image: url("http://www.guia-empresas.net/fondos/grandes/GE-fondo1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 10em;
-	background-position: bottom;
+
+
 }
 
 .navbar-header{
     background: #484953;
     height: 3em;
+
 }
 
-.logo{
+.logo-header{
     height: 30px;
     width: 30px;
     position: absolute;
@@ -86,5 +87,114 @@ body{
 .titulo-home{
     font-family: 'Crete Round', serif;
     font-size: 5em;
-    margin-left: 65px;
+    margin-top: 0;
+    top: 0;
+    margin-left: -59px;
 }
+
+.twitter{
+    margin-left: 56em;
+    margin-top: 0.25em;
+    color:rgb(32, 174, 240);
+    font-size:1.5em;
+}
+
+.fa-instagram{
+    color: white;
+}
+
+.fa-instagram:hover{
+    color: yellow;
+}
+
+.fa-facebook{
+    color: white;
+}
+
+.fa-facebook:hover{
+    color: blue;
+}
+
+/*FOOTER*/
+
+#myFooter {
+    background-color: #3a3f46;
+    color: white;
+}
+
+
+
+
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+
+#myFooter .second-bar .logo-footer a{
+    color:white;
+    font-size: 28px;
+    float: left;
+    font-weight: bold;
+    line-height: 68px;
+    padding: 0;
+    margin-top: -1.2em;
+    margin-left: 0em;
+    display: block;
+}
+
+
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .second-bar {
+    text-align: center;
+    background-color: #33373e;
+    text-align: center;
+}
+
+#myFooter .second-bar a:hover {
+    text-decoration: none;
+}
+
+#myFooter .social-icons {
+    float:right;
+}
+
+#myFooter .facebook:hover {
+    color: #0077e2;
+}
+
+#myFooter .google:hover {
+    color: #ef1a1a;
+}
+
+#myFooter .twitter-footer:hover {
+    color: #00aced;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+
+    #myFooter .info{
+        text-align: center;
+    }
+}
+
+/* CSS used for positioning the footers at the bottom of the page. */
+

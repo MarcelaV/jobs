@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
     <link rel="stylesheet" href="{% static 'fonts.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Acme|Crete+Round|Lato" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <!--<link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}"-->
     <!--<link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-Pu87tkhdc8aoo+5M/Coc7ErjxhR36ayOFNloPU+tR/4PamJKHHjhK9B0EBGKxNet" crossorigin="anonymous">-->
 
@@ -36,18 +37,22 @@
     </style>
 
 </head>
-<body>
+<body class="body-img">
 {% block navbar %}
 <div class="container-fluid">
     <div class="superior">
         <div class="row">
             <div class="col-md-12 navbar-header">
-                <a href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Vector-based_example.svg" alt="" class="logo"></a>
+                <a href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Vector-based_example.svg" alt="" class="logo-header"></a>
                 <h3 class="texto-logo">Jobs</h3>
+                <div class="twitter">
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
             </div>
         </div>
     </div>
-
     <header class="row">
         <div class="header col-md-12">
             <ul class="nav nav-tabs nav-justified">
@@ -76,21 +81,52 @@
     </div>
 </div>
 
-<div class="container-fluid">
-    <div class="row">
-        <footer class="footer col-md-12 panel-footer">
-            {% block footer %}
-            <h3 align="right">Portal Jobs</h3>
-            <h6 align="right">Jobs Inc &copy; Todos los derechos reservados</h6>
-            {% endblock %}
-        </footer>
-    </div>
-</div>
-
-
-
-
-
+{% block footer %}
+    <footer id="myFooter">
+        <div class="container container-fluid">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#">Company Information</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 info">
+                    <h5>Information</h5>
+                    <p> Lorem ipsum dolor amet, consectetur adipiscing elit. Etiam consectetur aliquet aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                </div>
+            </div>
+        </div>
+        <div class="second-bar">
+           <div class="container">
+                <h2 class="logo-footer"><a href="#">JOBS</a></h2>
+                <div class="social-icons">
+                    <a href="#" class="twitter-footer"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="facebook-footer"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="google-footer"><i class="fab fa-google-plus"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}
 
 
 
