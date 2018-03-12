@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3c35fb5a-4425-48f2-baec-097f0ba30d4a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change beforePath="$PROJECT_DIR$/jobs/static/css/estilos.css" afterPath="$PROJECT_DIR$/jobs/static/css/estilos.css" />
-      <change beforePath="$PROJECT_DIR$/jobs/templates/recuperacion/password_reset_confirm.html" afterPath="$PROJECT_DIR$/jobs/templates/recuperacion/password_reset_confirm.html" />
-      <change beforePath="$PROJECT_DIR$/ofertas/forms.py" afterPath="$PROJECT_DIR$/ofertas/forms.py" />
       <change beforePath="$PROJECT_DIR$/ofertas/templates/ofertas/home.html" afterPath="$PROJECT_DIR$/ofertas/templates/ofertas/home.html" />
-      <change beforePath="$PROJECT_DIR$/ofertas/templates/ofertas/ofertas_list.html" afterPath="$PROJECT_DIR$/ofertas/templates/ofertas/ofertas_list.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/ofertas/forms.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="298">
-              <caret line="29" column="15" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="15" />
+              <caret line="29" column="15" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -42,8 +37,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ofertas/templates/ofertas/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="60" column="71" lean-forward="false" selection-start-line="60" selection-start-column="71" selection-end-line="60" selection-end-column="71" />
+            <state relative-caret-position="241">
+              <caret line="68" column="64" lean-forward="false" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
@@ -76,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/jobs/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="36" column="65" lean-forward="true" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="77" />
+              <caret line="36" column="65" lean-forward="false" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -667,7 +662,7 @@
     <entry file="file://$PROJECT_DIR$/ofertas/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
-          <caret line="29" column="15" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="15" />
+          <caret line="29" column="15" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -691,7 +686,7 @@
     <entry file="file://$PROJECT_DIR$/jobs/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="36" column="65" lean-forward="true" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="77" />
+          <caret line="36" column="65" lean-forward="false" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="77" />
           <folding />
         </state>
       </provider>
@@ -701,7 +696,7 @@
         <state relative-caret-position="342">
           <caret line="18" column="59" lean-forward="false" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
           <folding>
-            <element signature="n#style#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -732,8 +727,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ofertas/templates/ofertas/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="60" column="71" lean-forward="false" selection-start-line="60" selection-start-column="71" selection-end-line="60" selection-end-column="71" />
+        <state relative-caret-position="241">
+          <caret line="68" column="64" lean-forward="false" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
