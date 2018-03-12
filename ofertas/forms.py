@@ -14,7 +14,6 @@ class PostularForm(forms.ModelForm):
     class Meta:
         model = Postular
         fields = [
-            'postulante_oferta',
             'nivel_educacional',
             'carrera',
             'experiencia',
@@ -22,7 +21,6 @@ class PostularForm(forms.ModelForm):
         ]
 
         labels = {
-            'postulante_oferta': 'Postulante',
             'nivel_educacional': 'Nivel educacional',
             'carrera': 'Carrera',
             'experiencia': 'Experiencia',

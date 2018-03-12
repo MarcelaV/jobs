@@ -24,17 +24,56 @@
     </div>
 
 <br>
-
-    <h4>Últimos cargos requeridos</h4>
 <br>
-<div class="container">
+
+<div class="container-fluid last_cargos">
     <div class="row">
-        <div class="listita col-md-4">
-        {% if descripcion_list > 0 %}
-            {% include 'ofertas/ofertas_loop.html' %}
+        <div class="col-md-8">
+            <div class="jumbotron">
+                <h2>Últimos cargos requeridos</h2>
+                <br>
+                <br>
+                <div style="padding:0;" class="container-fluid">
+                    <div class="row">
+                        <div class="col-md 12">
+                            {% if descripcion_list > 0 %}
+                            {% include 'ofertas/ofertas_loop.html' %}
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <p><a style="margin-left: 10em;" class="btn btn-primary btn-lg" href="{{ 'ofertas/' }}" role="button">Ver más ofertas</a></p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <img src="/static/img/luis_felipe.jpg" alt="...">
+            <div class="caption">
+                <h3>Luis Felipe Vergara</h3>
+                <p>Gracias a Jobs, mi vida cambió rotundamente</p>
+                <p><a href="#" class="btn btn-default" role="button">**Saber más...</a></p>
+            </div>
         </div>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
     {% else %}
