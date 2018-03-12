@@ -2,9 +2,23 @@
 
 {% block title %} Listado de ofertas {% endblock %}
 
+
 {% block section %}
 
-    <h1>Listado de ofertas actuales</h1>
-    {% include 'ofertas/ofertas_loop.html' with descripcion_list=ofertas %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <h1>Listado de ofertas actuales</h1>
+                <br>
+                <br>
+                {% include 'ofertas/ofertas_loop.html' with descripcion_list=ofertas %}
+            </div>
+
+            <div class="col-md-3">
+                <img src="static/img/image1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
 
 {% endblock %}

@@ -55,7 +55,6 @@ urlpatterns = [
                                                    'email_template_name': 'recuperacion/password_reset_email.html'},
                                                     name='password_reset'),
     url(r'^password_reset_done', password_reset_done, {'template_name': 'recuperacion/password_reset_done.html'}, name='password_reset_done'),
-    #url(r'^password_reset_done', password_reset_done, {'template_name': 'registration/password_reset_done.html'}, name='password_reset_done'),
     url(r'^reset/(?P<uidb64>[0-94-Za-z_\-]+)/(?P<token>.+)/$', password_reset_confirm, {'template_name': 'recuperacion/password_reset_confirm.html'}, name="password_reset_confirm"),
     url(r'^reset/done', password_reset_complete, {'template_name': 'recuperacion/password_reset_complete.html'}, name='password_reset_complete'),
 ]
